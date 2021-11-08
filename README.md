@@ -58,7 +58,13 @@ Connection: close
 
 1. 접근 방법 : 머신러닝 모델 변경
     - 시도 세부 방법 : 다른 이분분류를 사용하는 머신러닝 모델 3가지를 테스트 하여 비교<sub>[커널서퍼포트벡터머신/KNN/의사결정나무]</sub>
-    - 결과 : 만족스러운
+    - 코드 예시
+'''python
+def train(train_vec,train_y): #Kernelized Support Machine
+  svm = SVC(C=100)
+  svm.fit(train_vec, train_y)
+  return svm
+'''
 
 ### 결론
 
