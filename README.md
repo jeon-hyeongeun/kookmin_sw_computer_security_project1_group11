@@ -67,7 +67,7 @@ def train(train_vec,train_y): #Kernelized Support Machine
 
 2. 접근 방법 : 벡터 처리 방식 변경
   - 시도 세부 방법 : 임베딩(벡터화)하는 방법으로는 기존에 윈-핫 인코딩을 사용하지만, 데이터 간 연관 관계를 표현할 수 없다는 단점이 있어 이를 보완한 인베딩 기법인 doc2vec으로 벡터화 변경 시도
-
+  - 코드 예시
 ```python
 def vectorize(train_x, test_x):
   model = Doc2vec(data, vector_siez=5, window=3, min_count=1, workers=4)
@@ -75,6 +75,25 @@ def vectorize(train_x, test_x):
   train_vec =inferred(train_x)
   test_vec = inferred(test_x)
   return train_vec, test_vec
+```
+
+3. 접근 방법 : randomforestclasssfier의 최적 파라미터 검색
+  - GridSearchCV를 통해 최적 파라미터를 검색
+  - 코드 예시
+
+```python
+def train(train_vec, train_y):
+  rf = randomForestClassfier()
+  
+  params = {'n_estimators' : [10, 100],
+            'max_depth' : [6, 8, 10, 12],
+            'min_samples_leaf' : [8, 10, 12],
+            'min_samples_split' : [8, 16, 20]
+            }
+  grid_cv = GridSearchCV(rf, param_grid = params, cv = 3, n_jobs = -1)
+  grid_cv.fit(train_vec, train_y)
+  
+  print('촤적 파라미터: ', grid_cv,best_params_)
 ```
 
 ### 결론
