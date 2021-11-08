@@ -59,6 +59,7 @@ Connection: close
   - 시도 세부 방법 : 다른 이분분류를 사용하는 머신러닝 모델 3가지를 테스트 하여 비교<sub>[커널서퍼포트벡터머신/KNN/의사결정나무]</sub>
   - 코드 예시
 ```python
+from sklearn.svm import SVC
 def train(train_vec,train_y): #Kernelized Support Machine
   svm = SVC(C=100)
   svm.fit(train_vec, train_y)
@@ -69,6 +70,7 @@ def train(train_vec,train_y): #Kernelized Support Machine
   - 시도 세부 방법 : 임베딩(벡터화)하는 방법으로는 기존에 윈-핫 인코딩을 사용하지만, 데이터 간 연관 관계를 표현할 수 없다는 단점이 있어 이를 보완한 인베딩 기법인 doc2vec으로 벡터화 변경 시도
   - 코드 예시
 ```python
+from gensim.doc2vec import Doc2Vec, TaggedDocument
 def vectorize(train_x, test_x):
   model = Doc2vec(data, vector_siez=5, window=3, min_count=1, workers=4)
   inferred = model.infer_vector(['GET', 'POST', 'http'])
@@ -82,6 +84,7 @@ def vectorize(train_x, test_x):
   - 코드 예시
 
 ```python
+from sklearn.model_selection import GridSearchCV, train_test_split
 def train(train_vec, train_y):
   rf = randomForestClassfier()
   
