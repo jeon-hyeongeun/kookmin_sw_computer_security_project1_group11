@@ -96,6 +96,31 @@ def train(train_vec, train_y):
   print('촤적 파라미터: ', grid_cv,best_params_)
 ```
 
+4. 접근 방법 : 파싱 데이터 정제
+  - 비정상 적인 웹공격 탐지를 하기 위해 필요한 method와 body만 파싱해 데이터를 분석
+  - 코드 예시
+
+```python
+def parsing(path):#파싱을 진행하는 함수
+    with open(path,'r',encoding='utf-8') as f:#파일을 읽어드리고 ['로그','로그',...] 이런식으로 
+        train=[]
+        para=""
+        while True:
+            l = f.readline() #한줄씩 읽어 옵니다
+            if not l:
+                break #파일을 전부 읽으면 읽기를 중단합니다.
+            if l != "\n":
+                if l[:3] == 'GET' or l[:4] == 'POST': #method가 있는 라인만 받아옵니다.
+                  para +=l
+            else:
+                if para!='':
+                    if para[:4]=='POST': #Method가 POST인 경우 예외적으로 바디까지 가져옵니다.
+                        para+=f.readline()
+                    train.append(para)
+                    para=""
+    return train
+```
+
 ### 결론
 
 acuurancy score와 f1 score의 결과값이 가장 유의미한 파싱 데이터 처리 방식 변경을 채택<sup>[Submit_code.ipynb](Submit_code.ipynb)</sup>
