@@ -62,7 +62,7 @@ Connection: close
 
 ### 결론
 
-acuurancy score와 f1 score의 결과값이 가장 유의미한 파싱 데이터 처리 방식 변경을 채택
+acuurancy score와 f1 score의 결과값이 가장 유의미한 파싱 데이터 처리 방식 변경을 채택<sup>[Submit_code.ipynb](Submit_code.ipynb)</sup>
 
 ### 참고 자료
 
