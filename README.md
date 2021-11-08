@@ -33,6 +33,20 @@ train : test 비율은 8:2
 [정상 테스트 데이터](norm_test.txt)  
 [비정상 테스트 데이터](anomal_test.txt)  
 
+데이터 예시
+~~~
+GET http://localhost:8080/tienda1/publico/anadir.jsp?id=2&nombre=Vino+Rioja&precio=85&cantidad=18&B1=%27+AND+%271%27%3D%271 HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.8 (like Gecko)
+Pragma: no-cache
+Cache-control: no-cache
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Encoding: x-gzip, x-deflate, gzip, deflate
+Accept-Charset: utf-8, utf-8;q=0.5, *;q=0.5
+Accept-Language: en
+Host: localhost:8080
+Cookie: JSESSIONID=08C8DCD89400C53A4F6F4C6029663578
+Connection: close
+~~~
 
 ### 자료 출처
 
