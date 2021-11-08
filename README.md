@@ -28,10 +28,10 @@ train : test 비율은 8:2
 |Test|5,013개|7,200개|
 |Train|20,052개|28,800개|
 
-[정상 학습 데이터](normal_train.txt)
-[비정상 학습 데이터]
-[정상 테스트 데이터]
-[비정상 테스트 데이터]
+[정상 학습 데이터](https://github.com/jeon-hyeongeun/kookmin_sw_computer_security_project1_group11/blob/main/norm_train.txt)
+[비정상 학습 데이터](https://github.com/jeon-hyeongeun/kookmin_sw_computer_security_project1_group11/blob/main/anomal_train.txt)
+[정상 테스트 데이터](https://github.com/jeon-hyeongeun/kookmin_sw_computer_security_project1_group11/blob/main/norm_test.txt)
+[비정상 테스트 데이터](https://github.com/jeon-hyeongeun/kookmin_sw_computer_security_project1_group11/blob/main/anomal_test.txt)
 
 
 ### 자료 출처
