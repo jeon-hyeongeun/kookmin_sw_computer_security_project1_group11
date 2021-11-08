@@ -135,4 +135,4 @@ acuurancy score와 f1 score의 결과값이 가장 유의미한 파싱 데이터
 
 ### 참고 자료
 
-[한국정보통신학회논문](https://www.koreascience.or.kr/article/JAKO201905653788969.pdf) - 벡터화 처리 방식 변경 시도
+[한국정보통신학회논문](https://www.koreascience.or.kr/article/JAKO201905653788969.pdf)
