@@ -125,6 +125,11 @@ def parsing(path):#파싱을 진행하는 함수
 
 acuurancy score와 f1 score의 결과값이 가장 유의미한 파싱 데이터 처리 방식 변경을 채택<sup>[Submit_code.ipynb](Submit_code.ipynb)</sup>
 
+
+### 향후 보완 요소
+- 필요한 데이터가 추가적으로 있는데 파싱하지 않았는지 확인
+- 과적합 가능성 확인
+
 ### 참고 자료
 
 [한국정보통신학회논문](https://www.koreascience.or.kr/article/JAKO201905653788969.pdf) - 벡터화 처리 방식 변경 시도
