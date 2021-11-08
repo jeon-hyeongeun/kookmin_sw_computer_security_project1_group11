@@ -19,7 +19,7 @@
   2. **Dynamic attacks** : request argument에 대한 공격 ex) sql injection
   3. **Unintentional illegal requests** : 공격 의도를 갖지 않지만 비정상적인 로그를 남김 ex) 전화번호 기입란에 문자를 기입
 
-### 데티어 설명
+### 데이터 설명
 데이터는 train과 test 데이터로 나누어져 있음
 train : test 비율은 8:2
 
@@ -28,7 +28,7 @@ train : test 비율은 8:2
 |Test|5,013개|7,200개|
 |Train|20,052개|28,800개|
 
-[정상 학습 데이터]
+[정상 학습 데이터](\normal_train.txt)
 [비정상 학습 데이터]
 [정상 테스트 데이터]
 [비정상 테스트 데이터]
