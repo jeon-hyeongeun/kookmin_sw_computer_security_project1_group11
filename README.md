@@ -1,4 +1,4 @@
-# kookmin_sw_computer_security_project1_group11
+# 정보보호와 보안 웹공격탐지 프로젝트 11조
 
 
 |비정상 데이터의 공격 종류|내용|처리 방법
