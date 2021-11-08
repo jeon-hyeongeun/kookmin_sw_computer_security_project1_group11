@@ -59,4 +59,4 @@ Connection: close
 
 ### 참고 자료
 
-[한국정보통신학회논문](https://www.koreascience.or.kr/article/JAKO201905653788969.pdf)<sub>벡터화 처리 방식 변경</sub>
+[한국정보통신학회논문](https://www.koreascience.or.kr/article/JAKO201905653788969.pdf) - 벡터화 처리 방식 변경 시도
