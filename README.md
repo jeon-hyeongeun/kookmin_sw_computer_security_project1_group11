@@ -9,7 +9,7 @@
 ## 프로젝트 내용
 
 ### 프로젝트 개요
-- 기본 주어진 머신러닝 모델 코드[base_code.ioynb](https://github.com/jeon-hyeongeun/kookmin_sw_computer_security_project1_group11/blob/main/Base_code.ipynb)를 기반으로 개선된 코드 생성
+- 기본 주어진 머신러닝 모델 코드[base_code.ipynb](https://github.com/jeon-hyeongeun/kookmin_sw_computer_security_project1_group11/blob/main/Base_code.ipynb)를 기반으로 개선된 코드 생성
 
 ### 데이터셋 설명
 - 스페인 온라인 쇼핑몰의 HTTP request 로그
