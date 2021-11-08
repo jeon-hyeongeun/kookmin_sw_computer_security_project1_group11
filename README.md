@@ -9,7 +9,7 @@
 ## 프로젝트 내용
 
 ### 프로젝트 개요
-- 기본 주어진 웹공격 탐지 머신러닝 모델 코드<sup>[base_code.ipynb](Base_code.ipynb)<sup>를 기반으로 개선된 코드 생성
+- 기본 주어진 웹공격 탐지 머신러닝 모델 코드<sup>[base_code.ipynb](Base_code.ipynb)</sup>를 기반으로 개선된 코드 생성
 
 ### 데이터셋 설명
 - 스페인 온라인 쇼핑몰의 HTTP request 로그
